@@ -1,4 +1,4 @@
-# deep-infomax
+# deep-INFOMAX
 Chainer implementation of [Learning deep representations by mutual information estimation and maximization.](https://arxiv.org/abs/1808.06670)
 
 # Example of clustering result on CIFAR10
