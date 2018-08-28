@@ -9,7 +9,7 @@ Car class image was taken from the CIFAR10 test set, then the L1 distance in enc
 # Usage
 To train, run:
 
-`$ python train.py -g 0 -o output_directory --alpha X --beta Y --gamma Z`, replacing XYZ with the hyperparameters you want (see paper for more details).
+`$ python train.py -g 0 -o output_directory --alpha X --beta Y --gamma Z`, replacing XYZ with the hyperparameters you want (see paper for more details). Training for 1000 epochs takes roughly 24 hours.
 
 To perform some simple clustering, run:
 
