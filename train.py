@@ -63,7 +63,7 @@ def main(args):
 
     dim = DeepINFOMAX(alpha=args.alpha, beta=args.beta, gamma=args.gamma)
 
-    if device >= 0:
+    if args.device >= 0:
         chainer.backends.cuda.get_device_from_id(args.device).use()
         dim.to_gpu(args.device)
 
