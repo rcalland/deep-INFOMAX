@@ -59,7 +59,7 @@ class DeepINFOMAX(chainer.Chain):
 
 def main(args):
     train, test = chainer.datasets.get_cifar10()
-    train_iter = iterators.SerialIterator(train, batchsize)
+    train_iter = iterators.SerialIterator(train, args.batchsize)
 
     dim = DeepINFOMAX(alpha=args.alpha, beta=args.beta, gamma=args.gamma)
 
@@ -92,7 +92,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--device", "-g", type=int, default=-1)
     parser.add_argument("--epochs", "-e", type=int, default=1000)
-    parser.add_argument("--batchsize", "-b", type=int, default=)
+    parser.add_argument("--batchsize", "-b", type=int, default=256)
     parser.add_argument("--learning_rate", "-l", type=float, default=1.E-4)
     parser.add_argument("--output", "-o", type=str, default="results")
     parser.add_argument("--alpha", "-A", type=float, default=0.5)
